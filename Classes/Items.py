@@ -49,8 +49,8 @@ class Weapon(Item):
                 return False
 
 
-class HealthPacks(Item):
-    def __init__(self, name, hp):
-        self.name = name
+class HealthPack(Item):
+    def __init__(self, hp):
         self.HP = hp
+        self.name = 'HealthPack'
         Entity.__init__(self, self.name)
